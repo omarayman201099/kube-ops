@@ -1,0 +1,168 @@
+:root {
+
+/* ===================== */
+/* 🎨 BRAND COLORS */
+/* ===================== */
+
+--bs-primary: #3B82F6;
+--bs-primary-rgb: 59,130,246;
+
+--bs-info: #22D3EE;
+--bs-info-rgb: 34,211,238;
+
+--bs-secondary: #1F2937;
+--bs-secondary-rgb: 31,41,55;
+
+/* ===================== */
+/* 🌌 BACKGROUND SYSTEM */
+/* ===================== */
+
+--bs-body-bg: #030712;
+--bs-body-color: #FFFFFF;
+
+--bg-main: #030712;
+--bg-section: #0B1120;
+--bg-card: #111827;
+--bg-card-soft: #1F2937;
+--bg-footer: #020617;
+
+/* ===================== */
+/* ✍️ TEXT COLORS */
+/* ===================== */
+
+--text-primary: #FFFFFF;
+--text-secondary: #9CA3AF;
+--text-muted: #6B7280;
+
+/* ===================== */
+/* 📦 CARDS */
+/* ===================== */
+
+--bs-card-bg: #111827;
+--bs-card-border-color: rgba(255,255,255,0.05);
+
+/* ===================== */
+/* 🔘 BUTTONS */
+/* ===================== */
+
+--bs-btn-border-radius: 8px;
+--bs-btn-padding-y: 0.6rem;
+--bs-btn-padding-x: 1.4rem;
+
+/* ===================== */
+/* 🔤 TYPOGRAPHY */
+/* ===================== */
+
+--bs-font-sans-serif: "Inter", sans-serif;
+
+
+--fs-xs: 12px;
+--fs-sm: 14px;
+--fs-md: 16px;
+--fs-lg: 18px;
+--fs-xl: 24px;
+--fs-2xl: 28px;
+--fs-3xl: 40px;
+--fs-4xl: 62px;
+
+--fw-light: 300;
+--fw-normal: 400;
+--fw-medium: 600;
+--fw-bold: 700;
+--fw-xl-bold: 900;
+
+
+
+/* ===================== */
+/* 📏 SPACING */
+/* ===================== */
+
+--space-1: 4px;
+--space-2: 8px;
+--space-3: 12px;
+--space-4: 16px;
+--space-5: 24px;
+--space-6: 32px;
+--space-7: 48px;
+--space-8: 64px;
+--space-9: 80px;
+--space-10: 96px;
+--space-11: 120px;
+
+/* ===================== */
+/* 📦 LAYOUT */
+/* ===================== */
+
+--container-width: 1200px;
+--section-padding-y: 120px;
+--section-padding-x: 80px;
+
+/* ===================== */
+/* 🔘 BORDER RADIUS */
+/* ===================== */
+
+--bs-border-radius: 12px;
+--bs-border-radius-lg: 16px;
+--radius-xl: 20px;
+
+/* ===================== */
+/* 🌫 SHADOWS */
+/* ===================== */
+
+--bs-box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+--bs-box-shadow-lg: 0 8px 40px rgba(0,0,0,0.4);
+
+--glow-blue: 0 0 40px rgba(59,130,246,0.5);
+--glow-cyan: 0 0 60px rgba(34,211,238,0.4);
+
+/* ===================== */
+/* 🌈 GRADIENTS */
+/* ===================== */
+
+--gradient-primary: linear-gradient(90deg,#4A94F9,#53D9FF);
+--gradient-hero: radial-gradient(circle at 70% 30%,rgba(59,130,246,0.35),transparent 40%);
+
+/* ===================== */
+/* ⚡ TRANSITIONS */
+/* ===================== */
+
+--transition-fast: 0.2s ease;
+--transition-normal: 0.3s ease;
+--transition-slow: 0.5s ease;
+
+/* ===================== */
+/* 📱 BREAKPOINTS */
+/* ===================== */
+
+--bp-sm: 576px;
+--bp-md: 768px;
+--bp-lg: 992px;
+--bp-xl: 1200px;
+--bp-xxl: 1400px;
+
+}
+
+
+
+
+
+.gradient-text {
+  background: var(--gradient-primary); /* اتجاه وألوان الجرادينت */
+  -webkit-background-clip: text; /* ضروري للـ Webkit browsers */
+  -webkit-text-fill-color: transparent; /* يخلي النص يظهر بالجرادينت */
+  background-clip: text; /* للـ browsers الحديثة */
+}
+.gradient-text-2 {
+  background: linear-gradient(90deg,rgba(74, 148, 249, 1) 0%, rgba(83, 217, 255, 1) 50%);
+  -webkit-background-clip: text; /* ضروري للـ Webkit browsers */
+  -webkit-text-fill-color: transparent; /* يخلي النص يظهر بالجرادينت */
+  background-clip: text; /* للـ browsers الحديثة */
+}
+
+
+
+.gradient-icon {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
