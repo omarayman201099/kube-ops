@@ -63,6 +63,7 @@ header {
 .hero-bg .bg-overlay {
   position: absolute;
   top: 0;
+  opacity: .4;
   right: 500px;
   width: 900px;
   height: 718px;
