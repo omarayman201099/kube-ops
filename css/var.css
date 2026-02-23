@@ -62,7 +62,7 @@
 --fs-lg: 18px;
 --fs-xl: 24px;
 --fs-2xl: 28px;
---fs-3xl: 40px;
+--fs-3xl: 32px;
 --fs-4xl: 62px;
 
 --fw-light: 300;
@@ -146,23 +146,19 @@
 
 
 
-.gradient-text {
-  background: var(--gradient-primary); /* اتجاه وألوان الجرادينت */
-  -webkit-background-clip: text; /* ضروري للـ Webkit browsers */
-  -webkit-text-fill-color: transparent; /* يخلي النص يظهر بالجرادينت */
-  background-clip: text; /* للـ browsers الحديثة */
-}
+/* ── Gradient Utilities ── */
+.gradient-text,
 .gradient-text-2 {
-  background: linear-gradient(90deg,rgba(74, 148, 249, 1) 0%, rgba(83, 217, 255, 1) 50%);
-  -webkit-background-clip: text; /* ضروري للـ Webkit browsers */
-  -webkit-text-fill-color: transparent; /* يخلي النص يظهر بالجرادينت */
-  background-clip: text; /* للـ browsers الحديثة */
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-
-
 
 .gradient-icon {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
