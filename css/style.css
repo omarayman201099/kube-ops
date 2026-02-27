@@ -332,6 +332,9 @@ font-size: 19px;
     background-image: var(--gradient-primary);
 
   }
+  .navbar-brand{
+    font-size: var(--fs-2xl);
+  }
   .nav-link i {
     font-size: 20px;
    }
@@ -356,6 +359,9 @@ text-align: start;  }
   .nav-link {
     font-size: 280px;
     padding: 4px 6px;
+  }
+  .navbar-brand{
+    font-size: var(--fs-xl);
   }
   .nav-link i {
     font-size: 24px;
@@ -686,9 +692,7 @@ display: none;
 /* ── Small Mobile (max 480px) ── */
 @media (max-width: 480px) {
 
-  .navbar-brand {
-    font-size: var(--fs-lg);
-  }
+
 
   .hero-content h1,
   .hero-content h2 {
