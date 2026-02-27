@@ -13,7 +13,7 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assetess/icons/check.png" type="image/x-icon">
 </head>
 <body>
 
@@ -73,7 +73,7 @@
 <!-- services -->
 <section id="services">
   <div class="container">
-    <div class="title">
+    <div class="title text-start">
       <h4>WHAT WE DO </h4>
       <h2>Cloud Engineering Services</h2>
     </div>
@@ -111,7 +111,7 @@
   <div class="container">
 
     <!-- Title -->
-    <div class="title text-center">
+    <div class="title ">
       <h4 class="gradient-text">WHO WE HELP</h4>
       <h2>Engineered For Every Cloud Journey</h2>
     </div>
@@ -193,10 +193,11 @@
     </div>
   </div>
 </section>
+
 <!-- why section -->
 <section id="why">
   <div class="container">
-    <div class="title text-center">
+    <div class="title ">
       <h4 class="gradient-text">WHY KUBE-OPS</h4>
       <h1>We Build What Actually Works</h1>
     </div>
@@ -224,10 +225,11 @@
 
 
 
- <section id="open-source">
+<section id="open-source">
   <div class="container">
     <div class="open-source-wrapper">
 
+      <!-- ===== LEFT ===== -->
       <div class="open-source-content">
         <h4>OPEN SOURCE</h4>
         <h2>Open-source tools and free services designed to empower DevOps teams.</h2>
@@ -236,8 +238,9 @@
           learn, and deploy with confidence.
         </p>
 
-        <a href="#" 
-           class="btn-secondary-2"
+        <!-- البتن للديسكتوب فقط -->
+        <a href="#"
+           class="btn-secondary-2 btn-desktop gap-3" 
            role="button"
            aria-label="Explore our open source projects">
           Explore Projects
@@ -245,6 +248,7 @@
         </a>
       </div>
 
+      <!-- ===== RIGHT (الكاردز) ===== -->
       <div class="open-source-cards">
 
         <article class="os-card">
@@ -280,10 +284,20 @@
         </article>
 
       </div>
+      <!-- ===== END RIGHT ===== -->
+
+      <!-- البتن للموبايل فقط — يظهر تحت الكاردز في الريسبونسف -->
+      <a href="#"
+         class="btn-secondary-2 btn-mobile"
+         role="button"
+         aria-label="Explore our open source projects">
+        Explore Projects
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+
     </div>
   </div>
 </section>
-
 
 <!-- contact -->
 <section id="contact">

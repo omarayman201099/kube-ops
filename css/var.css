@@ -110,17 +110,18 @@
 /* 🌫 SHADOWS */
 /* ===================== */
 
---bs-box-shadow: 0 4px 20px rgba(0,0,0,0.3);
---bs-box-shadow-lg: 0 8px 40px rgba(0,0,0,0.4);
+--bs-box-shadow: 0 4px 20px rgba(74, 148, 249, .3);
+--bs-box-shadow-lg: 0 8px 40px rgba(86, 0, 247, 0.4);
 
 --glow-blue: 0 0 40px rgba(59,130,246,0.5);
---glow-cyan: 0 0 60px rgba(34,211,238,0.4);
+--glow-cyan: 0  60px rgba(34,211,238,0.4);
 
 /* ===================== */
 /* 🌈 GRADIENTS */
 /* ===================== */
 
 --gradient-primary: linear-gradient(90deg,#4A94F9,#53D9FF);
+--gradient-hover: linear-gradient(90deg,#4A94F9,#53D9FF,#0d1527);
 --gradient-primary-2: linear-gradient(90deg,rgba(74, 148, 249, .2),rgba(83, 217, 255, .3));
 --gradient-hero: radial-gradient(circle at 70% 30%,rgba(59,130,246,0.35),transparent 40%);
 
