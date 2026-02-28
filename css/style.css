@@ -10,7 +10,7 @@
 }
 
 section {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 body {
@@ -112,7 +112,7 @@ header {
 .hero-bg .bg-planet {
   position: absolute;
   top: 0;
-  left: 600px;
+  left: 50%;
   width: 600px;
   height: 718px;
   object-fit: cover;
@@ -769,13 +769,13 @@ footer {
   }
 
   .hero-bg .bg-planet {
-    left: 500px;
+    left: 50%;
     width: 500px;
   }
 
 .Hero-content {
-   position: relative;
-   top: -50px;
+   position: absolute ;
+   top:0;
   }
 
   .hero-content h1,
@@ -834,7 +834,7 @@ footer {
 }
 
 /* ── Mobile 768px ── */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
 
   section {
     padding: 60px 0;
