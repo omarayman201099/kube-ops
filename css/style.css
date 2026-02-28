@@ -102,9 +102,9 @@ header {
 
 .hero-bg .bg-overlay {
   position: absolute;
-  top: 0;
+  top: -50px;
   opacity: 0.4;
-  right: 500px;
+  right: 400px;
   width: 900px;
   height: 718px;
 }
@@ -129,6 +129,8 @@ header {
   flex-direction: column;
   gap: 20px;
   max-width: 800px;
+  margin-top: 50px;
+  
 }
 
 .hero-badge {
