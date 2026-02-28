@@ -115,7 +115,8 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  max-width: 300px;
+  width: 235px;
+  height: 24px;
   background-color: rgba(15, 21, 36, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
@@ -130,8 +131,8 @@ header {
 }
 
 .badge-avatars img {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   border: 2px solid rgba(15, 21, 36, 0.9);
   object-fit: cover;
@@ -143,7 +144,7 @@ header {
 }
 
 .hero-badge-custom p {
-  font-size: var(--fs-sm);
+  font-size: 5px;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
   white-space: nowrap;
@@ -163,9 +164,7 @@ header {
     height: 26px;
   }
 
-  .hero-badge-custom p {
-    font-size: 12px;
-  }
+
 }
 .hero-bg .bg-planet {
   position: absolute;
