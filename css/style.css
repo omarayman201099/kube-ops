@@ -109,6 +109,64 @@ header {
   height: 718px;
 }
 
+
+
+.hero-badge-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  background-color: rgba(15, 21, 36, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 4px 8px 4px 4px;
+  backdrop-filter: blur(8px);
+}
+
+.badge-avatars {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.badge-avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(15, 21, 36, 0.9);
+  object-fit: cover;
+  margin-left: -10px;
+}
+
+.badge-avatars img:first-child {
+  margin-left: 0;
+}
+
+.hero-badge-custom p {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.badge-count {
+  font-weight: var(--fw-bold);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 480px) {
+  .badge-avatars img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero-badge-custom p {
+    font-size: 12px;
+  }
+}
 .hero-bg .bg-planet {
   position: absolute;
   top: 0;
