@@ -753,8 +753,6 @@ display: none;
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background-color: #131f35;
-  border: 1px solid rgba(74, 148, 249, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -762,9 +760,8 @@ display: none;
 }
 
 .why-card-icon img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+  width: 36px;
+  height: 36px;
 }
 
 .why-card p {
@@ -977,6 +974,7 @@ display: none;
       .btn-mobile {
         display: inline-flex;
         align-items: center;
+        gap: 12px;
       }
     }
 
@@ -1017,16 +1015,29 @@ display: none;
 
 #contact {
   position: relative;
-  background-color: rgba(5, 10, 18, 1);
-  background-image:
-    linear-gradient(180deg, rgba(13, 24, 43, 0.5), rgba(5, 10, 18, 1)),
-    url(../assetess/footer/b897ded4817c48359a770d6d90de22e9ed3dd066.png);
+  background-color: #050A12;
+ background-image: linear-gradient(180deg, #0D182B80, #050A12);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 665px;
   padding: 0px 0;
+}
+#contact:before {
+  content: "";
+  position: absolute;
+ 
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(13,24,43,0.8) 0%, rgba(5,10,18,0.8) 100%);
+  z-index: 0;
+}
+
+
+.bg img{
+  width: 1440px;
+  height: 560px;
+  top: -0.19px;
 }
 
 /* light + vector */
@@ -1063,7 +1074,11 @@ display: none;
 
 /* content */
 .contact-content {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -1151,9 +1166,10 @@ display: none;
     bottom: 20px;
   }
 
-  .btn-group2 {
+ #contact .btn-group2 {
     flex-direction: column;
     width: 100%;
+    margin: 0 200px;
   }
 
   .btn-primary,
