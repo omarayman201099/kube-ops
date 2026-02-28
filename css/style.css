@@ -773,6 +773,11 @@ footer {
     width: 500px;
   }
 
+.Hero-content {
+   position: relative;
+   top: -50px;
+  }
+
   .hero-content h1,
   .hero-content h2 {
     font-size: var(--fs-3xl);
@@ -1029,6 +1034,11 @@ footer {
 
   .nav-link i {
     font-size: 20px;
+  }
+
+  .hero-content{
+    position: relative;
+    top: -60px;
   }
 
   .hero-content h1,
