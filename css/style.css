@@ -912,7 +912,7 @@ footer {
   }
 
   .nav-link i {
-    font-size: 250px;
+    font-size: 28px;
   }
 
   .iconn {
@@ -1188,7 +1188,7 @@ footer {
 
   .hero-content h1,
   .hero-content h2 {
-    font-size: clamp(32px, 8.5vw, 44px);
+    font-size: 42px;
     line-height: 1.1;
   }
 
