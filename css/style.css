@@ -18,7 +18,7 @@ body {
 }
 
 section {
-  padding-block: 110px;
+  padding: 120px 0;
 }
 
 .container {
@@ -26,6 +26,9 @@ section {
   margin: 0 auto;
   padding-inline: clamp(16px, 5vw, 80px);
 }
+
+
+
 
 /* ══════════════════════════════════════ */
 /*  NAVBAR                                */
@@ -39,6 +42,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 70px;
 }
 
 .navbar-brand {
@@ -164,8 +168,9 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: #10162e;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(#10162e, #10162e) padding-box,
+              var(--gradient-primary) border-box;
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 4px 12px 4px 4px;
   backdrop-filter: blur(8px);
@@ -200,6 +205,8 @@ header {
 
 .badge-count {
   font-weight: var(--fw-bold);
+  font-size: 18px;
+  margin-right: 5px;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -245,7 +252,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 12px 28px;
-  border-radius: 12px;
+  border-radius: 8px;
   color: #fff;
   height: 48px;
   font-weight: var(--fw-medium);
@@ -369,12 +376,15 @@ header {
   width: auto;
   background-color: rgba(15, 21, 36, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 28px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transition: border-color var(--transition-normal), transform var(--transition-normal);
+
+}
+.pricing-card:hover {
+   box-shadow: var(--bs-box-shadow);
 }
 
 .pricing-card .card-icon {
@@ -402,7 +412,7 @@ header {
 
 .card-divider {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   margin: 0;
 }
 
@@ -435,7 +445,7 @@ header {
   gap: 8px;
   padding: 14px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: #131f35;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #fff;
@@ -633,6 +643,7 @@ header {
 
 .btn-desktop{
   width: 208px;
+  font-size: 14 px;
 }
 /* ══════════════════════════════════════ */
 /*  CONTACT                               */
@@ -640,8 +651,7 @@ header {
 
 #contact {
   position: relative;
-  background-color: #050A12;
-  background-image: linear-gradient(180deg, #0D182B80, #050A12);
+  background-image: url(../assetess/background/Div\ [usecases].png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -652,53 +662,7 @@ header {
   padding-block: 110px;
 }
 
-#contact::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(13, 24, 43, 0.8) 0%, rgba(5, 10, 18, 0.8) 100%);
-  z-index: 0;
-}
 
-.bg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  opacity: 0.3;
-}
-
-.light {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  margin-top: 60px;
-}
-
-.light img {
-  width: 340px;
-  height: 340px;
-  opacity: 0.25;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  margin-bottom: 4px;
-  z-index: 1;
-  position: relative;
-  box-shadow: 0 0 8px rgba(74, 148, 249, 0.8),
-              0 0 20px rgba(74, 148, 249, 0.4);
-}
 
 .contact-content {
   position: relative;
@@ -781,6 +745,7 @@ footer {
   background-color: var(--bg-footer);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 24px 0;
+  
 }
 
 .footer-bottom {
@@ -841,12 +806,12 @@ footer {
   }
 
   .hero-content {
-    max-width: 500px;
+    max-width: 200px;
   }
 
   .hero-content h1,
   .hero-content h2 {
-    font-size: var(--fs-res);
+    font-size:42px;
   }
 
   .hero-content p {
@@ -896,6 +861,7 @@ footer {
   .contact-content {
     padding-top: 60px;
   }
+
 }
 
 /* ══════════════════════════════════════ */
@@ -905,11 +871,11 @@ footer {
 @media (max-width: 768px) {
 
   section {
-    padding-block: 60px;
+    padding: 80px 0;
   }
 
   /* navbar */
-  .navbar-brand img:last-child {
+  .navbar-brand img:first-child {
     display: none;
   }
 
@@ -924,7 +890,7 @@ footer {
   }
 
   .nav-link i {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .iconn {
@@ -1004,13 +970,15 @@ footer {
 
   /* why */
   #why {
-    padding-top: 160px;
+    padding-bottom: 150px;
+    margin-top: -140px;
+    height: 800px;
     background-image: url(../assetess/background/res\ background.png);
   }
 
   #why .title {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -1030,6 +998,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 22px;
+    margin-top: 190px;
     padding-block: 90px;
   }
 
@@ -1041,19 +1010,24 @@ footer {
 
   /* open source */
   #open-source {
-    padding-block: 40px;
+    padding-block: 100px;
   }
 
   .open-source-wrapper {
-    padding: 24px;
+    padding: 30px;
   }
 
   .open-source-content h2 {
     font-size: var(--fs-2xl);
+    line-height: 2rem;
   }
 
   .os-card {
     flex-direction: column;
+  }
+
+  .open-source-cards{
+    margin-top: -30px;
   }
 
   .os-card-img {
@@ -1061,9 +1035,16 @@ footer {
     height: 160px;
   }
 
+.btn-mobile{
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+  .open-source-content{
+    gap: 10px;
+  }
   /* contact */
   #contact {
-    padding-block: 60px;
+    padding-block: 100px;
     min-height: auto;
   }
 
@@ -1093,7 +1074,7 @@ footer {
 
   .scroll-top {
     right: 16px;
-    bottom: 16px;
+    bottom: 18px;
     width: 40px;
     height: 40px;
     font-size: 16px;
@@ -1107,7 +1088,9 @@ footer {
 
   .footer-nav {
     justify-content: center;
-    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
   }
 }
 
@@ -1174,5 +1157,34 @@ footer {
 
   .footer-nav a {
     font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  section {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  /* شيل الـ padding-block من #why و #open-source و #contact */
+  #why {
+    padding-top: 60px;
+
+    /* باقي خصائص الـ why */
+  }
+
+  #open-source {
+    padding-block: 60px;
+  }
+
+  #contact {
+    padding-block: 60px;
   }
 }
