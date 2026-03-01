@@ -41,11 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ─────────────────────────────────── */
 
   // Hero
-  register('.hero-badge',          'anim-fade-down');
-  register('.hero-content h1',     'anim-fade-up');
-  register('.hero-content h2',     'anim-fade-up');
-  register('.hero-content p',      'anim-fade-up');
-  register('.btn-group2',          'anim-fade-up');
+
 
   // Titles
   register('.title h4',            'anim-fade-up');
@@ -76,3 +72,26 @@ document.addEventListener('DOMContentLoaded', () => {
   register('#contact .btn-group2', 'anim-fade-up');
 
 });
+
+
+// ── Badge Counter Animation ──
+function animateBadgeCounter() {
+  const countEl = document.querySelector('.badge-count');
+  if (!countEl) return;
+
+  const target = parseInt(countEl.textContent.replace('+', ''));
+  const duration = 1500; // ms
+  const step = target / (duration / 16);
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    countEl.textContent = '+' + Math.floor(current);
+  }, 16);
+}
+
+document.addEventListener('DOMContentLoaded', animateBadgeCounter);
