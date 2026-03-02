@@ -5,42 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kube-Ops | Kubernetes Consulting & DevOps Training</title>
     <meta name="description" content="Kube-Ops provides cloud-native consulting, Kubernetes migrations, and DevOps training for modern engineering teams.">
+    <meta name="keywords" content="Kubernetes, DevOps, cloud native, consulting, training, Docker, container orchestration, CI/CD, cloud infrastructure">
+    <meta name="author" content="Kube-Ops">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kube-ops.com/">
     
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kube-Ops | Kubernetes Consulting & DevOps Training">
+    <meta property="og:description" content="Cloud Native consulting and DevOps training for modern engineering teams.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kube-ops.com/">
+    <meta property="og:image" content="./assetess/logo/Frame 2121458286.png">
+    <meta property="og:site_name" content="Kube-Ops">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kube-Ops | Kubernetes Consulting & DevOps Training">
+    <meta name="twitter:description" content="Cloud Native consulting and DevOps training for modern engineering teams.">
+    <meta name="twitter:image" content="./assetess/logo/Frame 2121458286.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css" media="all">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
     <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assetess/logo/Logo.png" type="image/x-icon">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="icon" href="assetess/logo/Logo.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assetess/logo/Logo.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assetess/logo/Logo.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kube-Ops",
+      "url": "https://kube-ops.com/",
+      "logo": "https://kube-ops.com/assetess/logo/Frame 2121458286.png",
+      "description": "Kube-Ops provides cloud-native consulting, Kubernetes migrations, and DevOps training for modern engineering teams.",
+      "sameAs": [
+        "https://www.linkedin.com/company/kube-ops/",
+        "https://www.facebook.com/share/1FsDxiHhBR/",
+        "https://youtube.com/@kube-ops"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://kube-ops.com/#contact"
+      },
+      "serviceType": ["Kubernetes Consulting", "DevOps Training", "Cloud Native Migration"],
+      "areaServed": "Worldwide",
+      "knowsAbout": ["Kubernetes", "Docker", "Cloud Native", "DevOps", "CI/CD"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Kube-Ops",
+      "url": "https://kube-ops.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://kube-ops.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
 
+
+
 <!-- navbar -->
-<header>
-  <nav class="navbar">
+<header role="banner">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container d-flex">
-      <a class="navbar-brand gradient-text d-flex gap-3" href="#">
-        <img src="./assetess/logo/Logo.png" alt="">
-        <img src="./assetess/logo/Frame 2121458286.png" alt=""> 
+      <a class="navbar-brand gradient-text d-flex gap-3" href="#" aria-label="Kube-Ops Home">
+        <img src="./assetess/logo/Logo.png" alt="Kube-Ops Logo" width="40" height="40">
+        <img src="./assetess/logo/Frame 2121458286.png" alt="Kube-Ops"> 
       </a>
       <div class="navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
-            <a class="nav-link" href="https://youtube.com/@kube-ops?si=mNW0lc01M97BGj5F" target="_blank" aria-label="Visit our YouTube channel">
-              <i class="fa-brands fa-youtube iconn"></i>
+            <a class="nav-link" href="https://youtube.com/@kube-ops?si=mNW0lc01M97BGj5F" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel (opens in new tab)">
+              <i class="fa-brands fa-youtube iconn" aria-hidden="true"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/company/kube-ops/" target="_blank"  aria-label="Send us an email">
-              <i class="fa-brands fa-linkedin-in iconn"></i>
+            <a class="nav-link" href="https://www.linkedin.com/company/kube-ops/" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page (opens in new tab)">
+              <i class="fa-brands fa-linkedin-in iconn" aria-hidden="true"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/share/1FsDxiHhBR/?mibextid=wwXIfr"  target="_blank"  aria-="Visit our GitHub page">
-              <i class="fa-brands fa-facebook iconn "></i>
+            <a class="nav-link" href="https://www.facebook.com/share/1FsDxiHhBR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page (opens in new tab)">
+              <i class="fa-brands fa-facebook iconn" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
@@ -49,33 +113,36 @@
   </nav>
 </header>
 
+<!-- main content -->
+<main id="main-content" role="main">
+
 <!-- hero -->
-<section id="hero"  >
+<section id="hero">
   <div class="hero-bg">
-    <img class="bg-overlay" src="assetess/6564b1ff614b75b0b1aff149571684327c740ddc.png" alt="Background overlay" loading="lazy">
-    <img class="bg-planet" src="assetess/1ea2fff85776ba64a330d58c0e46a988e030c135.png" alt="Planet illustration" loading="lazy">
+    <img class="bg-overlay" src="assetess/6564b1ff614b75b0b1aff149571684327c740ddc.png" alt="Decorative background overlay" width="1920" height="1080" loading="eager">
+    <img class="bg-planet" src="assetess/1ea2fff85776ba64a330d58c0e46a988e030c135.png" alt="Decorative planet illustration" width="800" height="800" loading="eager">
   </div>
 
   <div class="container">
     <div class="hero-content">
      <div class="hero-badge-custom ">
-  <div class="badge-avatars">
-    <img src="./assetess/persons/07693418be868656244b6ecaf0c5a01088f4b20d.png" alt="">
-    <img src="./assetess/persons/0c150f5f8c4400731d5f10c8f33bad95dfde82f5.jpg" alt="">
-    <img src="./assetess/persons/6c8c499aef16fc32046f914c1b80e40b362fbc70.png" alt="">
-    <img src="./assetess/persons/cff8bdd896f5730df623c29a513f900e76096e77.jpg" alt="">
+  <div class="badge-avatars" role="img" aria-label="Happy clients">
+    <img src="./assetess/persons/07693418be868656244b6ecaf0c5a01088f4b20d.png" alt="Client avatar 1" width="32" height="32" loading="lazy">
+    <img src="./assetess/persons/0c150f5f8c4400731d5f10c8f33bad95dfde82f5.jpg" alt="Client avatar 2" width="32" height="32" loading="lazy">
+    <img src="./assetess/persons/6c8c499aef16fc32046f914c1b80e40b362fbc70.png" alt="Client avatar 3" width="32" height="32" loading="lazy">
+    <img src="./assetess/persons/cff8bdd896f5730df623c29a513f900e76096e77.jpg" alt="Client avatar 4" width="32" height="32" loading="lazy">
   </div>
-  <p><span class="badge-count">+65</span> Happy Clients</p>
+  <p><span class="badge-count" aria-label="More than 65">+65</span> Happy Clients</p>
 </div>
       <h1>Build, Scale & Secure <span class="gradient-text-2"></span></h1>
       <h2 class="gradient-text-2">Kubernetes <br> Infrastructure</h2>
       <p>Cloud Native consulting and DevOps training for <br> modern engineering teams.</p>
       <div class="btn-group2">
-        <a href="#" role="button" class="btn btn-primary d-flex align-items-center gap-2">
-          <i class="fa-regular fa-calendar"></i> Book a Free Strategy Call
+        <a href="#" role="button" class="btn btn-primary d-flex align-items-center gap-2" aria-label="Book a Free Strategy Call">
+          <i class="fa-regular fa-calendar" aria-hidden="true"></i> Book a Free Strategy Call
         </a>
-        <a href="#" role="button" class="btn-secondary-2 d-flex justify-content-center align-content-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon rocket icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg> Explore Training
+        <a href="#" role="button" class="btn-secondary-2 d-flex justify-content-center align-content-center gap-2" aria-label="Explore Training">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon rocket icon-tabler icons-tabler-outline icon-tabler-rocket" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg> Explore Training
         </a>
       </div>
     </div>
@@ -83,17 +150,17 @@
 </section>
 
 <!-- services -->
-<section id="services">
+<section id="services" aria-labelledby="services-heading">
   <div class="container">
     <div class="title text-start">
-      <h4>WHAT WE DO </h4>
+      <h4 id="services-heading">WHAT WE DO </h4>
       <h2>Cloud Engineering Services</h2>
     </div>
 
     <div class="cards">
       <div class="service-card">
         <div class="card-icon">
-          <img src="./assetess/Overlay+Border (1).png" alt="Cloud Native Consulting icon" loading="lazy">
+          <img src="./assetess/Overlay+Border (1).png" alt="Icon representing Cloud Native Consulting services" width="64" height="64" loading="lazy">
         </div>
         <h3>Cloud Native Consulting</h3>
         <p>Architecture reviews, Kubernetes migrations and production hardening — tailored to your stack and scale.</p>
@@ -101,7 +168,7 @@
 
       <div class="service-card">
         <div class="card-icon">
-          <img src="./assetess/Overlay+Border (2).png" alt="DevOps Training icon" loading="lazy">
+          <img src="./assetess/Overlay+Border (2).png" alt="Icon representing DevOps Training services" width="64" height="64" loading="lazy">
         </div>
         <h3>DevOps Training </h3>
         <p>Hands-on, production-grade courses that take your team from fundamentals to advanced Kubernetes operations.</p>
@@ -109,7 +176,7 @@
 
       <div class="service-card">
         <div class="card-icon">
-          <img src="./assetess/Overlay+Border (3).png" alt="Open Source Innovation icon" loading="lazy">
+          <img src="./assetess/Overlay+Border (3).png" alt="Icon representing Open Source Innovation services" width="64" height="64" loading="lazy">
         </div>
         <h3>Open Source Innovation</h3>
         <p>Tools built by practitioners for practitioners. We contribute to the ecosystem we rely on every day.</p>
@@ -119,116 +186,120 @@
 </section>
 
 <!-- who we help -->
-<section id="who-we-help">
+<section id="who-we-help" aria-labelledby="who-we-help-heading">
+
+
+ 
   <div class="container">
+  <!-- Title -->
+     <div class="title ">
+    <h4 class="gradient-text" id="who-we-help-heading">WHO WE HELP</h4>
+    <h2>Engineered For Every Cloud Journey</h2>
+  </div>
 
-    <!-- Title -->
-    <div class="title ">
-      <h4 class="gradient-text">WHO WE HELP</h4>
-      <h2>Engineered For Every Cloud Journey</h2>
-    </div>
+  <!-- Cards -->
+  <div class="content">
+    <div class="cards-2" role="list">
 
-    <!-- Cards -->
-    <div class="content">
-      <div class="cards-2">
-
-        <!-- Card 1 -->
-        <div class="pricing-card">
-          <div class="card-icon">
-            <img src="./assetess/icons/rockte.png" alt="For Startups" loading="lazy">
-          </div>
-
-          <h3> Startups Scaling Fast</h3>
-          <hr class="card-divider">
-
-          <ul class="card-features">
-            <li><img src="./assetess/icons/check.png" alt=""> Production-ready infrastructure</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Scalable cloud foundations</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Cost-optimized architecture</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Rapid deployment pipelines</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Lean platform strategy</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Future-proof system design</li>
-          </ul>
-
-          <a href="#" class="card-btn">
-            Start Now <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+      <!-- Card 1 -->
+      <div class="pricing-card" role="listitem">
+        <div class="card-icon">
+          <img src="./assetess/icons/rockte.png" alt="Icon for Startups Scaling Fast" width="48" height="48" loading="lazy">
         </div>
 
-        <!-- Card 2 (Active / Highlighted) -->
-        <div class="pricing-card carddd-2">
-          <div class="card-icon">
-            <img src="./assetess/icons/books.png" alt="For Teams" loading="lazy">
-          </div>
+        <h3> Startups Scaling Fast</h3>
+        <hr class="card-divider">
 
-          <h3> Engineering Teams</h3>
-          <hr class="card-divider">
+        <ul class="card-features">
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Production-ready infrastructure</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Scalable cloud foundations</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Cost-optimized architecture</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Rapid deployment pipelines</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Lean platform strategy</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Future-proof system design</li>
+        </ul>
 
-          <ul class="card-features">
-            <li><img src="./assetess/icons/check.png" alt=""> Kubernetes migration strategy</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Production-grade clusters</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Reliable deployment workflows</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Architecture best practices</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Cluster performance tuning</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Infrastructure standardization</li>
-          </ul>
-
-          <a href="#" class="card-btn">
-            Start Now <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="pricing-card">
-          <div class="card-icon">
-            <img src="./assetess/icons/Overlay+Border (6).png" alt="For Developers" loading="lazy">
-          </div>
-
-          <h3> Developers</h3>
-          <hr class="card-divider">
-
-          <ul class="card-features">
-            <li><img src="./assetess/icons/check.png" alt=""> Structured DevOps roadmap</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Hands-on Kubernetes mastery</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Real-world infrastructure skills</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Cloud-native expertise</li>
-            <li><img src="./assetess/icons/check.png" alt=""> CI/CD fundamentals</li>
-            <li><img src="./assetess/icons/check.png" alt=""> Infrastructure as code</li>
-          </ul>
-
-          <a href="#" class="card-btn">
-            Start Now <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-
+        <a href="#" class="card-btn" aria-label="Start now - Startups Scaling Fast">
+          Start Now <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
       </div>
+
+      <!-- Card 2 (Active / Highlighted) -->
+      <div class="pricing-card carddd-2" role="listitem">
+        <div class="card-icon">
+          <img src="./assetess/icons/books.png" alt="Icon for Engineering Teams" width="48" height="48" loading="lazy">
+        </div>
+
+        <h3> Engineering Teams</h3>
+        <hr class="card-divider">
+
+        <ul class="card-features">
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Kubernetes migration strategy</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Production-grade clusters</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Reliable deployment workflows</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Architecture best practices</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Cluster performance tuning</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Infrastructure standardization</li>
+        </ul>
+
+        <a href="#" class="card-btn" aria-label="Start now - Engineering Teams">
+          Start Now <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pricing-card" role="listitem">
+        <div class="card-icon">
+          <img src="./assetess/icons/Overlay+Border (6).png" alt="Icon for Developers" width="48" height="48" loading="lazy">
+        </div>
+
+        <h3> Developers</h3>
+        <hr class="card-divider">
+
+        <ul class="card-features">
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Structured DevOps roadmap</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Hands-on Kubernetes mastery</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Real-world infrastructure skills</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Cloud-native expertise</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> CI/CD fundamentals</li>
+          <li><img src="./assetess/icons/check.png" alt="Checkmark"> Infrastructure as code</li>
+        </ul>
+
+        <a href="#" class="card-btn" aria-label="Start now - Developers">
+          Start Now <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </div>
+
     </div>
   </div>
+  </div>
+
+
 </section>
 
 <!-- why section -->
-<section id="why">
+<section id="why" aria-labelledby="why-heading">
   <div class="container">
     <div class="title ">
-      <h4 class="gradient-text">WHY KUBE-OPS</h4>
+      <h4 class="gradient-text" id="why-heading">WHY KUBE-OPS</h4>
       <h1>We Build What Actually Works</h1>
     </div>
 
     <div class="why-bg">
       <div class="why-card why-card-tl">
-        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (7).png " alt="Expertise icon" loading="lazy"></div>
+        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (7).png " alt="Icon representing Production-grade Kubernetes expertise" width="48" height="48" loading="lazy"></div>
         <p>Production-grade Kubernetes experience across industries</p>
       </div>
       <div class="why-card why-card-tr">
-        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (9).png" alt="Implementation icon" loading="lazy"></div>
+        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (9).png" alt="Icon representing Real-world implementation" width="48" height="48" loading="lazy"></div>
         <p>Real-world implementation, not theoretical advice</p>
       </div>
       <div class="why-card why-card-bl">
-        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (8).png" alt="Leadership icon" loading="lazy"></div>
+        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (8).png" alt="Icon representing Senior cloud architects leadership" width="48" height="48" loading="lazy"></div>
         <p>Led by senior cloud architects and CNCF practitioners</p>
       </div>
       <div class="why-card why-card-br">
-        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (10).png" alt="Open Source icon" loading="lazy"></div>
+        <div class="why-card-icon"><img src="./assetess/icons/wh/Overlay+Border (10).png" alt="Icon representing Open-source mindset" width="48" height="48" loading="lazy"></div>
         <p>Open-source mindset, we build and share publicly</p>
       </div>
     </div>
@@ -237,36 +308,38 @@
 
 
 
-<section id="open-source">
+<section id="open-source" aria-labelledby="open-source-heading">
   <div class="container">
     <div class="open-source-wrapper">
 
       <!-- ===== LEFT ===== -->
       <div class="open-source-content">
-        <h4>OPEN SOURCE</h4>
+        <h4 id="open-source-heading">OPEN SOURCE</h4>
         <h2>Open-source tools and free services designed to empower DevOps teams.</h2>
         <p>
           Practical, production-focused tools designed to help teams experiment,
           learn, and deploy with confidence.
         </p>
 
-        <!-- البتن للديسكتوب فقط -->
+        <!-- Desktop button -->
         <a href="#"
            class="btn-secondary-2 btn-desktop gap-3" 
            role="button"
            aria-label="Explore our open source projects">
           Explore Projects
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </a>
       </div>
 
-      <!-- ===== RIGHT (الكاردز) ===== -->
+      <!-- ===== RIGHT (Cards) ===== -->
       <div class="open-source-cards">
 
         <article class="os-card">
           <div class="os-card-img">
             <img src="./assetess/n8n (2).png"
-                 alt="Kube Composer interface preview"
+                 alt="Kube Composer - Visual YAML generator for Kubernetes configuration"
+                 width="300"
+                 height="200"
                  loading="lazy"
                  decoding="async">
           </div>
@@ -282,7 +355,9 @@
         <article class="os-card os-card-active">
           <div class="os-card-img">
             <img src="./assetess/n8n (1).png"
-                 alt="n8n workflow automation playground"
+                 alt="n8n Playground - Open environment for testing automation workflows"
+                 width="300"
+                 height="200"
                  loading="lazy"
                  decoding="async">
           </div>
@@ -298,13 +373,13 @@
       </div>
       <!-- ===== END RIGHT ===== -->
 
-      <!-- البتن للموبايل فقط — يظهر تحت الكاردز في الريسبونسف -->
+      <!-- Mobile button -->
       <a href="#"
          class="btn-secondary-2 btn-mobile"
          role="button"
          aria-label="Explore our open source projects">
         Explore Projects
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
       </a>
 
     </div>
@@ -312,53 +387,54 @@
 </section>
 
 <!-- contact -->
-<section id="contact">
+<section id="contact" aria-labelledby="contact-heading">
 
 
   <div class="container">
 
 
     <div class="contact-content">
-      <a href="#footer" class="contact-badge">LET'S TALK</a>
-      <h2>Ready to modernize your infrastructure?</h2>
+      <a href="#footer" class="contact-badge" aria-label="Navigate to contact section">LET'S TALK</a>
+      <h2 id="contact-heading">Ready to modernize your infrastructure?</h2>
       <p>Let's discuss your architecture, identify quick wins, and build a roadmap to production-grade Kubernetes.</p>
 
       <div class="btn-group2">
-        <a href="#" class="btn btn-primary d-flex align-items-center gap-2">
-        <i class="fa-regular fa-calendar"></i> Book a Free Strategy Call
+        <a href="#" class="btn btn-primary d-flex align-items-center gap-2" aria-label="Book a Free Strategy Call">
+        <i class="fa-regular fa-calendar" aria-hidden="true"></i> Book a Free Strategy Call
         </a>
-             <a href="#" role="button" class="btn-secondary-2 d-flex justify-content-center align-content-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon rocket icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg> Explore Training
+             <a href="#" role="button" class="btn-secondary-2 d-flex justify-content-center align-content-center gap-2" aria-label="Explore Training">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon rocket icon-tabler icons-tabler-outline icon-tabler-rocket" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg> Explore Training
         </a>
       </div>
     </div>
 
-    <a href="#hero" class="scroll-top">
-      <i class="fa-solid fa-arrow-up"></i>
+    <a href="#hero" class="scroll-top" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </a>
   </div>
 </section>
+
+</main>
+
 <!-- footer -->
-<footer id="footer">
+<footer id="footer" role="contentinfo">
   <div class="container">
     <div class="footer-bottom">
       <p>© 2026 Kube-Ops. All rights reserved.</p>
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#services">Services</a>
         <a href="#training">Training</a>
-
         <a href="#open-source">Open Source</a>
-        <a href="https://www.linkedin.com/company/kube-ops/" target="_blank" class="gradient-text">LinkedIn</a>
-        <a href="https://youtube.com/@kube-ops?si=mNW0lc01M97BGj5F" target="_blank" class="gradient-text">YouTube</a>
-        <a href="https://www.facebook.com/share/1FsDxiHhBR/?mibextid=wwXIfr" target="_blank" class="gradient-text">facebook</a>
-        <a href="#contact" class="gradient-text" >Contact</a>
-
+        <a href="https://www.linkedin.com/company/kube-ops/" target="_blank" rel="noopener noreferrer" class="gradient-text">LinkedIn</a>
+        <a href="https://youtube.com/@kube-ops?si=mNW0lc01M97BGj5F" target="_blank" rel="noopener noreferrer" class="gradient-text">YouTube</a>
+        <a href="https://www.facebook.com/share/1FsDxiHhBR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="gradient-text">Facebook</a>
+        <a href="#contact" class="gradient-text">Contact</a>
       </nav>
     </div>
   </div>
 </footer>
 
-<script src="./js/bootstrap.bundle.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/bootstrap.bundle.js" defer></script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>
